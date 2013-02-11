@@ -2,3 +2,19 @@
 movies table.  The "director" field should be a string containing the
 name of the movie's director.
 
+saasbook@saasbook:~/work/hw4_rottenpotatoes$ rails generate migration AddDirectorToMovies director:string
+WARNING: Cucumber-rails required outside of env.rb.  The rest of loading is being defered until env.rb is called.
+  To avoid this warning, move 'gem cucumber-rails' under only group :test in your Gemfile
+      invoke  active_record
+      create    db/migrate/20130211200002_add_director_to_movies.rb
+
+saasbook@saasbook:~/work/hw4_rottenpotatoes$ rake db:migrate
+WARNING: Cucumber-rails required outside of env.rb.  The rest of loading is being defered until env.rb is called.
+  To avoid this warning, move 'gem cucumber-rails' under only group :test in your Gemfile
+==  AddDirectorToMovies: migrating ============================================
+-- add_column(:movies, :director, :string)
+   -> 0.0025s
+==  AddDirectorToMovies: migrated (0.0039s) ===================================
+
+Why is schema.rb not under source control, but development.sqlite3 is?  I will
+fix that on the next checkin.
