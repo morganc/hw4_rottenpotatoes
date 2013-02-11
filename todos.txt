@@ -1,0 +1,4 @@
+2. Create and apply a migration that adds the "director" field to the
+movies table.  The "director" field should be a string containing the
+name of the movie's director.
+

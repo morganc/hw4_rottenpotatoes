@@ -1,0 +1,52 @@
+saasbook@saasbook:~/work/hw4_rottenpotatoes$ rails generate cucumber:install capybara
+WARNING: Cucumber-rails required outside of env.rb.  The rest of loading is being defered until env.rb is called.
+  To avoid this warning, move 'gem cucumber-rails' under only group :test in your Gemfile
+      create  config/cucumber.yml
+      create  script/cucumber
+       chmod  script/cucumber
+      create  features/step_definitions
+      create  features/support
+      create  features/support/env.rb
+      create  lib/tasks
+      create  lib/tasks/cucumber.rake
+
+saasbook@saasbook:~/work/hw4_rottenpotatoes$ rails generate cucumber_rails_training_wheels:install
+WARNING: Cucumber-rails required outside of env.rb.  The rest of loading is being defered until env.rb is called.
+  To avoid this warning, move 'gem cucumber-rails' under only group :test in your Gemfile
+       exist  features/step_definitions
+      create  features/step_definitions/web_steps.rb
+       exist  features/support
+      create  features/support/paths.rb
+      create  features/support/selectors.rb
+
+saasbook@saasbook:~/work/hw4_rottenpotatoes$ rails generate rspec:install
+WARNING: Cucumber-rails required outside of env.rb.  The rest of loading is being defered until env.rb is called.
+  To avoid this warning, move 'gem cucumber-rails' under only group :test in your Gemfile
+      create  .rspec
+      create  spec
+      create  spec/spec_helper.rb
+saasbook@saasbook:~/work/hw4_rottenpotatoes$ 
+
+saasbook@saasbook:~/work/hw4_rottenpotatoes$ rake spec
+WARNING: Cucumber-rails required outside of env.rb.  The rest of loading is being defered until env.rb is called.
+  To avoid this warning, move 'gem cucumber-rails' under only group :test in your Gemfile
+/home/ubuntu/work/hw4_rottenpotatoes/db/schema.rb doesn't exist yet. Run "rake db:migrate" to create it then try again. If you do not intend to use a database, you should instead alter /home/ubuntu/work/hw4_rottenpotatoes/config/application.rb to limit the frameworks that will be loaded
+
+saasbook@saasbook:~/work/hw4_rottenpotatoes$ rake db:migrate
+WARNING: Cucumber-rails required outside of env.rb.  The rest of loading is being defered until env.rb is called.
+  To avoid this warning, move 'gem cucumber-rails' under only group :test in your Gemfile
+
+saasbook@saasbook:~/work/hw4_rottenpotatoes$ rake spec
+WARNING: Cucumber-rails required outside of env.rb.  The rest of loading is being defered until env.rb is called.
+  To avoid this warning, move 'gem cucumber-rails' under only group :test in your Gemfile
+No examples matching ./spec{,/*/**}/*_spec.rb could be found
+
+saasbook@saasbook:~/work/hw4_rottenpotatoes$ rake cucumber
+WARNING: Cucumber-rails required outside of env.rb.  The rest of loading is being defered until env.rb is called.
+  To avoid this warning, move 'gem cucumber-rails' under only group :test in your Gemfile
+/usr/local/bin/ruby -S bundle exec cucumber  --profile default
+Using the default profile...
+0 scenarios
+0 steps
+0m0.000s
+
