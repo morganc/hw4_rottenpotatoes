@@ -1,3 +1,12 @@
+3.  Create controller and model specs.  Begin by adding the cucumber
+scenarios for the "search for movies by director" feature.
+
+Note that cucumber by itself doesn't work, so we have to run
+  bundle exec cucumber
+
+I need to keep straight  "([^"]*)"$ and ".*"$
+
+
 2. Create and apply a migration that adds the "director" field to the
 movies table.  The "director" field should be a string containing the
 name of the movie's director.
@@ -18,3 +27,9 @@ WARNING: Cucumber-rails required outside of env.rb.  The rest of loading is bein
 
 Why is schema.rb not under source control, but development.sqlite3 is?  I will
 fix that on the next checkin.
+
+saasbook@saasbook:~/work/hw4_rottenpotatoes$ rake db:test:prepare
+WARNING: Cucumber-rails required outside of env.rb.  The rest of loading is being defered until env.rb is called.
+  To avoid this warning, move 'gem cucumber-rails' under only group :test in your Gemfile
+saasbook@saasbook:~/work/hw4_rottenpotatoes$ 
+
