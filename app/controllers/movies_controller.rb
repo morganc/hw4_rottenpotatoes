@@ -1,13 +1,13 @@
 class MoviesController < ApplicationController
 
   def similar
-    # TODO
-    id = params[:id]
-    movie = Movie.find(id)
+    # TODO, add some more RSpec love
+    movie = Movie.find(params[:id])
     director = movie[:director]
     if director and director != ""
       @movies = Movie.find_all_by_director(director)
     else
+      flash[:nodirector] = "'#{movie[:title]}' has no director info"
       redirect_to '/'
     end
   end
